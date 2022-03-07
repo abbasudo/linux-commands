@@ -64,6 +64,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 ```
 ## php
 ```shell
+sudo apt install software-properties-common
 sudo add-apt-repository ppa:ondrej/php
 sudo apt upgrade
 sudo apt update
