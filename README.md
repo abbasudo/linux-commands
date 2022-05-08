@@ -90,3 +90,18 @@ alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 ```shell
 sail up -d
 ```
+
+## webserver
+start apache
+```shell
+sudo service apache2 start
+```
+stop nginx
+```shell
+sudo systemctl stop nginx
+```
+disable nginx from startup
+```shell
+sudo systemctl disable nginx
+```
+
