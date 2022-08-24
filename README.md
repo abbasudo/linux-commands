@@ -104,4 +104,16 @@ disable nginx from startup
 ```shell
 sudo systemctl disable nginx
 ```
-
+## mysql
+install mysql
+```shell
+sudo apt-get install mysql-server
+```
+inter mysql server for the first time
+```shell
+sudo mysql
+```
+change default password mysql (sql command)
+```shell
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```
