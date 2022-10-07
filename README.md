@@ -1,5 +1,8 @@
 # linux-commands
 
+list of common linux command i use when i setup ubonto server
+
+
 ## user
 
 ### create 
@@ -83,7 +86,7 @@ curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
 ```shell
 sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
-## sail
+## laravel sail
 ```shell
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 ```
