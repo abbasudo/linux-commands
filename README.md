@@ -76,7 +76,7 @@ sudo apt update
 sudo apt install php8.0 php8.0-cli php8.0-common
 ```
 ```shell
-apt install openssl php8.0-curl php8.0-json php8.0-mbstring php8.0-mysql php8.0-xml php8.0-zip php8.0-mysqlnd php8.0-opcache php8.0-pdo php8.0-calendar php8.0-ctype php8.0-exif php8.0-ffi php8.0-fileinfo php8.0-ftp php8.0-gd php8.0-gettext php8.0-iconv php8.0-mysqli php8.0-phar php8.0-posix php8.0-readline php8.0-shmop php8.0-sockets php8.0-sysvmsg php8.0-sysvsem php8.0-sysvshm php8.0-tokenizer
+sudo apt install openssl php8.0-curl php8.0-json php8.0-mbstring php8.0-mysql php8.0-xml php8.0-zip php8.0-mysqlnd php8.0-opcache php8.0-pdo php8.0-calendar php8.0-ctype php8.0-exif php8.0-ffi php8.0-fileinfo php8.0-ftp php8.0-gd php8.0-gettext php8.0-iconv php8.0-mysqli php8.0-phar php8.0-posix php8.0-readline php8.0-shmop php8.0-sockets php8.0-sysvmsg php8.0-sysvsem php8.0-sysvshm php8.0-tokenizer
 ```
 ## composer
 ```shell
@@ -119,4 +119,9 @@ sudo mysql
 change default password mysql (sql command)
 ```shell
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```
+
+php my admin
+```shell
+sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
 ```
