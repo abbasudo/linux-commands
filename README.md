@@ -73,10 +73,10 @@ sudo apt upgrade
 sudo apt update
 ```
 ```shell
-sudo apt install php8.0 php8.0-cli php8.0-common
+sudo apt install php8.1 php8.1-cli php8.1-common
 ```
 ```shell
-sudo apt install openssl php8.0-curl php8.0-json php8.0-mbstring php8.0-mysql php8.0-xml php8.0-zip php8.0-mysqlnd php8.0-opcache php8.0-pdo php8.0-calendar php8.0-ctype php8.0-exif php8.0-ffi php8.0-fileinfo php8.0-ftp php8.0-gd php8.0-gettext php8.0-iconv php8.0-mysqli php8.0-phar php8.0-posix php8.0-readline php8.0-shmop php8.0-sockets php8.0-sysvmsg php8.0-sysvsem php8.0-sysvshm php8.0-tokenizer
+sudo apt install openssl php8.1-curl php8.1-mbstring php8.1-mysql php8.1-xml php8.1-zip php8.1-mysqlnd php8.1-opcache php8.1-pdo php8.1-calendar php8.1-ctype php8.1-exif php8.1-ffi php8.1-fileinfo php8.1-ftp php8.1-gd php8.1-gettext php8.1-iconv php8.1-mysqli php8.1-phar php8.1-posix php8.1-readline php8.1-shmop php8.1-sockets php8.1-sysvmsg php8.1-sysvsem php8.1-sysvshm php8.1-tokenizer
 ```
 ## composer
 ```shell
@@ -107,18 +107,41 @@ disable nginx from startup
 ```shell
 sudo systemctl disable nginx
 ```
+laravel config
+```text
+<VirtualHost *:80>
+   ServerName thedomain.com
+   ServerAdmin webmaster@thedomain.com
+   DocumentRoot /var/www/html/example/public
+
+   <Directory /var/www/html/example>
+       AllowOverride All
+   </Directory>
+   ErrorLog ${APACHE_LOG_DIR}/error.log
+   CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+enable rewrite module in apache
+```shell
+sudo a2enmod rewrite
+```
+
 ## mysql
 install mysql
 ```shell
 sudo apt-get install mysql-server
 ```
-inter mysql server for the first time
+enter mysql server for the first time
 ```shell
 sudo mysql
 ```
 change default password mysql (sql command)
 ```shell
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```
+mysql create database
+```shell
+CREATE DATABASE db_name;
 ```
 
 php my admin
