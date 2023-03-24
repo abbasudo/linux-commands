@@ -148,3 +148,14 @@ php my admin
 ```shell
 sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
 ```
+
+## VPN server
+```shell
+### Orginal x-ui installation
+default port is 54321
+sudo bash < <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+```
+### English version x-ui installation
+```shell
+sudo bash < <(curl -Ls https://raw.githubusercontent.com/hossinasaadi/x-ui/master/install.sh)
+```
