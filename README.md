@@ -139,11 +139,19 @@ sudo mysql
 ```
 change default password mysql (sql command)
 ```shell
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
 ```
 mysql create database
 ```shell
 CREATE DATABASE db_name;
+```
+
+mysql create user
+```shell
+CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+```
+```shell
+GRANT ALL PRIVILEGES ON database_name.* TO 'sammy'@'localhost' WITH GRANT OPTION;
 ```
 
 php my admin
