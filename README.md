@@ -73,7 +73,7 @@ sudo apt upgrade
 sudo apt update
 ```
 ```shell
-sudo apt install php8.1 php8.1-cli php8.1-common
+sudo apt install php php-cli php-common
 ```
 ```shell
 sudo apt install openssl php8.1-curl php8.1-mbstring php8.1-mysql php8.1-xml php8.1-zip php8.1-mysqlnd php8.1-opcache php8.1-pdo php8.1-calendar php8.1-ctype php8.1-exif php8.1-ffi php8.1-fileinfo php8.1-ftp php8.1-gd php8.1-gettext php8.1-iconv php8.1-mysqli php8.1-phar php8.1-posix php8.1-readline php8.1-shmop php8.1-sockets php8.1-sysvmsg php8.1-sysvsem php8.1-sysvshm php8.1-tokenizer
