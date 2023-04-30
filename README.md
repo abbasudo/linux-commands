@@ -2,6 +2,8 @@
 
 list of common linux command i use when i setup ubonto server
 
+## permissions
+![image](https://user-images.githubusercontent.com/86796762/235347441-75e56147-ece8-4de2-bf19-8fa47117bcf1.png)
 
 ## user
 
