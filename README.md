@@ -25,7 +25,7 @@ getent group
 ```shell
 usermod -a -G group1,group2 username
 ```
-add user to all default groups:
+add user to all default groups (kvm servers):
 ```shell
 usermod -a -G root,daemon,bin,sys,adm,tty,disk,lp,mail,news,uucp,man,proxy,kmem,dialout,fax,voice,cdrom,floppy,tape,sudo,audio,dip,www-data,backup,operator,list,irc,src,gnats,shadow,utmp,video,sasl,plugdev,staff,games,users,nogroup,systemd-journal,systemd-network,systemd-resolve,systemd-timesync,crontab,messagebus,input,kvm,render,syslog,tss,uuidd,tcpdump,ssh,landscape,admin,netdev,lxd,systemd-coredump username
 ```
