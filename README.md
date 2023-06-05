@@ -48,9 +48,9 @@ sudo apt-get install ca-certificates curl gnupg
 ```shell
 sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-sudo chmod a+r /etc/apt/keyrings/docker.gpg```
-```shell
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
 ```
+```shell
 echo \
   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
@@ -153,7 +153,15 @@ php my admin
 ```shell
 sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
 ```
-
+## Timezone
+### check current timezone
+```
+date
+```
+### change the timezone
+```shell
+sudo timedatectl set-timezone <your_time_zone>
+```
 ## VPN server
 ### Orginal x-ui installation
 default port is 54321
