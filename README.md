@@ -81,7 +81,8 @@ sudo apt update
 sudo apt install php php-cli php-common
 ```
 ```shell
-sudo apt install openssl php-curl php-mbstring php-mysql php-xml php-zip php-gd php-readline php-tokenizer```
+sudo apt install openssl php-curl php-mbstring php-mysql php-xml php-zip php-gd php-readline php-tokenizer
+```
 ## composer
 ```shell
 cd ~
