@@ -70,6 +70,16 @@ sudo apt-get update
 ```shell
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
+## Composer install without PHP
+```shell
+docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v $(pwd):/opt \
+    -w /opt \
+    laravelsail/php80-composer:latest \
+    composer install --ignore-platform-reqs
+```
+
 ## php
 ```shell
 sudo apt install software-properties-common
